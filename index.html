@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nhóm 4</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+              }
+            body {
+                margin: 0;
+                padding: 0;
+                
+            }
+                .header{
+                    display: flex;
+                
+                    flex-direction: row;
+                    align-items: center;
+                }
+            .header-background {
+                position: relative;
+                display: flex;
+                width: 880px;
+                align-items: center;
+                background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/462551509_1646772859590880_988471413654242782_n.png?stp=dst-png_s480x480&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeH4eDKQWUYsFP0Uu8z1sOOhISEQI2Vi87chIRAjZWLzt-O9q3xu3h6M1z6Hjz0rQ1a1u1-e6YfRCl2yAnjulOX8&_nc_ohc=HmVbRtFnORYQ7kNvgHxjsvt&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEnSR1SJy6megc3HZ2rvcfMjUtqtcAmdZ-M_6HJbKGZyw&oe=676138CB);
+                background-size: auto 100%;
+                background-position: left center;
+                background-repeat: no-repeat;
+                justify-content: flex-end;
+            }
+            .header-background-black {
+                background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 20px;
+    box-shadow: 0 0 40px 48px rgb(255, 255, 255);
+}
+
+            .header-title-h1{
+                margin-left: 60px;
+                font-size: 36px;
+                margin-bottom: 0px;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
+                color: #9d9d9d;
+            }
+            .header-title-h1-class{
+                font-size: 150px;
+                margin-left: 60px;
+                margin-top: 0px;
+                font-family: 'Arial', sans-serif;
+                font-weight: bold;
+                color: rgb(10, 6, 6);
+            }
+            
+            button {
+                padding: 17px 40px;
+                border-radius: 50px;
+                cursor: pointer;
+                border: 0;
+                background-color: #a7a7a7;
+                box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                font-size: 15px;
+                transition: all 0.5s ease;
+                margin-left: 60px;
+              }
+              
+              button:hover {
+                letter-spacing: 3px;
+                background-color: hsl(261deg 80% 48%);
+                color: hsl(0, 15%, 83%);
+                box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+              }
+              
+              button:active {
+                letter-spacing: 3px;
+                background-color: hsl(261deg 80% 48%);
+                color: hsl(0, 0%, 100%);
+                box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+                transform: translateY(10px);
+                transition: 100ms;
+              }
+              .content-h2{
+                font-size: 25px;
+    margin-top: 100px;
+    font-family: 'Arial', sans-serif;
+   
+    text-align: center;
+              }
+              .content-p{
+                color: #5d5d5d;
+                text-align: center;
+                font-size: 18px;
+                font-family: 'Arial', sans-serif;
+              }
+        .content-profile-teacher{
+            border-radius: 53px;
+            background: #fffaff;
+            box-shadow:  35px 35px 62px #8c8a8c,
+                         -35px -35px 62px #ffffff;
+             height: 250px;
+             width: 70%;
+             margin-top: 30px;
+             display: flex;
+             align-items: center;
+}
+.content-profile{
+    display: flex;
+    justify-content: center;
+}
+.content-profile-teacher-idea{
+    margin-left: 50px;
+}
+.content-profile-teacher-idea-style{
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 18px;
+    color: #181818;
+   
+   
+}
+.content-profile-student{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-profile-student-1{
+    border-radius: 53px;
+    background: #fffaff;
+    box-shadow: 35px 35px 62px #8c8a8c, -35px -35px 62px #ffffff;
+    height: 360px;
+    width: 16%;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.content-profile-student-1-img{
+    width: 170px;
+    height: 220px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.info-list {
+    list-style-type: none;
+    padding: 0px;
+}
+.info-list li {
+    margin: 10px 0;
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+.logo-facebook{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.content{
+    margin-top: 30px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div>
+            <div class="header-background"> 
+                <div class="header-background-black"></div>
+             </div>
+            </div>
+            <div class="header-title">
+                    <!-- <p class="header-title-h1">TẬP THỂ  </p>
+                    <h1 class="header-title-h1-class">12/5</h1> -->
+                    <button onclick="document.getElementById('target-section').scrollIntoView({ behavior: 'smooth' });">Stars Of A5k64</button>
+            </div>
+  
+
+            
+        </div>
+        <div class="content" id="target-section">
+            <h2 class="content-h2">Chào mừng đến với tập thể 12/5</h2>
+            <p class="content-p">tập thể 12/5 niên khóa 2022-2025 gồm 39 thành viên với cô giáo chủ nhiệm là Nguyễn Thị Thủy</p>
+            <div class="content-profile">
+                <div class="content-profile-teacher">
+                  <div class="content-profile-teacher-img">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462548772_576582568193120_4998448417846926799_n.jpg?stp=dst-jpg_s640x640&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEzbLkdr7OapDNqErfVpZTFIhNEIe9uw-0iE0Qh727D7fPuIf91iTN2miASdtrmqV7mZcLGV2ZCGbQ7sd4ZnWhk&_nc_ohc=9bPEbMfjzw0Q7kNvgFR06zf&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFiHY3lUdcLze-gjbsnxk2PwYAsy9l9YOLgwGE0Qp16qQ&oe=67618FD3" alt="" height="200px" width="160px" style="border-radius: 53px;margin-top:25px; margin-left:20px;">
+
+                  </div>
+                  <div class="content-profile-teacher-idea">
+                    <h1 class="content-profile-teacher-idea-style">Họ và tên: <span style="font: size 18px;color:#5d5d5d">Nguyễn Thị Thủy</span></h1>
+                    <h1 class="content-profile-teacher-idea-style">Ngày sinh: <span style="font: size 18px;color:#5d5d5d">*******</span></h1>
+                    <h1 class="content-profile-teacher-idea-style">Địa chỉ: <span style="font: size 18px;color:#5d5d5d">Đông Phú Quế Sơn Quảng Nam</span></h1>
+                    <h1 class="content-profile-teacher-idea-style">Môn: <span style="font: size 18px;color:#5d5d5d">Hóa học</span></h1>
+                    <h1 class="content-profile-teacher-idea-style">Chủ nhiệm: <span style="font: size 18px;color:#5d5d5d">12/5</span></h1>
+
+                  </div>
+
+                 
+                </div>
+
+                </div>
+
+
+                <div class="content-profile-student">
+
+
+                    <div class="content-profile-student-1">
+                       <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462548810_1096797525128211_3568118243257237800_n.jpg?stp=dst-jpg_s640x640&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHZyvEIecvXlQJ7POnhmPVfdW_JrBdkbPJ1b8msF2Rs8uz0BM9OoRmRaFhOdzYYQoHZji7hM3kWsaK8UotbEHUv&_nc_ohc=ANeF4oZN7OYQ7kNvgEFw-tx&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE5X4dkxayy8c2_c-edg6JaCTeR9-5TH89HV19PGnIr0g&oe=676295B5" class="content-profile-student-1-img">
+                       <ul class="info-list">
+                        <li> Nguyễn Tùng Dương</li>
+                        <li> 24/12/2007</li>
+                        <li> <a href="https://www.facebook.com/ngduong3790" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                    </ul>
+                    </div>
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462581968_2201052256943564_5724478200515503057_n.jpg?stp=dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGz4QHnTsck7zKVHgEJsTexC87N4jkBAqALzs3iOQECoAHQCXgiN3d3AHPas4cHBWfHJ9p7sLyhyI4_45J6znGj&_nc_ohc=QWd1oZKjrTUQ7kNvgEIQr7j&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE2l4GMob8YPaTzaJ2be6xF048apx6HR9_N0WDVBR_GHw&oe=67628D22" class="content-profile-student-1-img">
+                        <ul class="info-list">
+                            <li> Lê Nho Huy</li>
+                            <li> 23/08/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100051640403964" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462578041_540224185574736_1715848918968914855_n.jpg?stp=dst-jpg_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGGL9jHXFI5_jmrblapsZx4ssTtvAc8FJWyxO28BzwUlRVL1Opc0SV32f1bDnmzFkmurhYWFdkbFvltKP08x9GW&_nc_ohc=TKwzVLrYHBUQ7kNvgHiLKvU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHMU_VZitj7cXsjFOF4WrCK2hogxev_WqZD9KhwGMk8tw&oe=67626123" class="content-profile-student-1-img">
+                        <ul class="info-list">
+                            <li> Lê Minh Mạn</li>
+                            <li> 04/01/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100094109864948" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462569180_8629443573841182_1358256823736960943_n.jpg?stp=dst-jpg_s640x640&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEajb285Wb-X-t5rnRuJBIkROBDIN2QR9FE4EMg3ZBH0TKQfCS0Gkvjg-BB_MkjysTghlg_zKClDVPcFDf89znZ&_nc_ohc=lA9__Hw9czEQ7kNvgEqIyNK&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFZy-xcoZixNwUwj_yFLE8mjC4IIkLI7MUS5VPBUjWI5g&oe=67628727" class="content-profile-student-1-img">
+                      
+                        <ul class="info-list">
+                            <li> Hà Nhật Tín</li>
+                            <li> 24/06/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100041565370645" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462586696_2037718673325352_1511169914001204995_n.jpg?stp=dst-jpg_s640x640&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGpTebR92J-qj6EwsIJSwi8-upQHfKE46_66lAd8oTjr0WbH13TpstFaTc2n0xU0OxNJr190O2GQtFJJUr1E90T&_nc_ohc=NMsRE_X5Y48Q7kNvgHjlCh5&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEkhhnVpjaUQj1GT17uU6iBdedmjJjbBzqwj25xQZ9iwQ&oe=67628729" class="content-profile-student-1-img">
+                      
+                        <ul class="info-list">
+                            <li> Trần Hùng Phát </li>
+                            <li> 24/11/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100065353384854" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462559010_1007453041396982_9006771211401018658_n.jpg?stp=dst-jpg_s640x640&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeFXlCkNVea79UIYRpLNxiMjA2Ad7pd4udEDYB3ul3i50f9rW1mXJnRVL1Y_rDWiI2bmrk8EFBGviym6ZGDuCB_W&_nc_ohc=B_0X5R1MYWkQ7kNvgGoe4t9&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFVAFNq2aJX0OjHrjNiop9tw8OC7ZPTdtpxQF0bFsj1sA&oe=67627B4C" class="content-profile-student-1-img">
+                          
+                        <ul class="info-list">
+                            <li> Huỳnh Thanh Thiện</li>
+                            <li> 16/09/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100065106287536" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462553238_594569243235358_47542198142511554_n.jpg?stp=dst-jpg_s640x640&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHcmmcGtH9Eon30D10UkFS2bj1bjPH1eaxuPVuM8fV5rGwXW2doBkP6GyIZ0qk1AB_wtIoRECRBZubxVrssZ2XV&_nc_ohc=nbYxNkxjjlwQ7kNvgH7OGQA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGZs4IiE1uW9YiphIIjHO1U_FS8IU1Dw3z31Y1I8yBlDw&oe=676264D3" class="content-profile-student-1-img">
+                        <ul class="info-list">
+                            <li> Nguyễn Vũ Nhật Trường</li>
+                            <li> 01/09/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100049340387175" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462571028_1096041908740103_6925200151047869218_n.jpg?stp=dst-jpg_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGMCCGJ6WjiuwG5-8e7UzpVnOkdliM-h8Oc6R2WIz6HwwdNux0nWYqhjBqlqf8AMU9ZLOgAPdLlE8JvIb5gywDN&_nc_ohc=0J8a9OzkO4AQ7kNvgElWCjI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGHuPn9xL154vNaY4_ZRgspQCsohm0e3vdx_upCLHMsVA&oe=6762763D" class="content-profile-student-1-img">
+                        <ul class="info-list">
+                            <li>Nguyễn Anh Khoa</li>
+                            <li> 01/01/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100084516846637" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462550105_920163162975992_3069427870877214103_n.jpg?stp=dst-jpg_s640x640&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeESPPXWPZsIaggbj6OeLKf9wT5QSyKEgdDBPlBLIoSB0OwErNWkcq5XDRiuVz3LCz2okEAi-rcbc_3vlkNMzWuP&_nc_ohc=T__lbhqyHuwQ7kNvgHu8wzp&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFzj7OSm7k_yysieNIijpW1LiQP3w5_OYATVjyYKFXOAg&oe=67629423" class="content-profile-student-1-img">
+                        <ul class="info-list">
+                            <li> Trương Quốc Bảo</li>
+                            <li> 06/03/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100080000040259" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content-profile-student-1">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462537122_1349228236063173_3060189551047828789_n.jpg?stp=dst-jpg_s640x640&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGcby4-HXLDUvV6wmNJFTMq-O9ASXLPjqv470BJcs-Oq7EDQCMLi3iVrXtMghcWTLNRbREk7x-Ox1b0jcLHzs2O&_nc_ohc=HZCefGBWxGwQ7kNvgHwpT97&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFQVgMG3QWWhZbiJ8FjSoSzmOw2erVU0BEWXrTDXf-BPg&oe=676265EC" class="content-profile-student-1-img">
+                        <ul class="info-list">
+                            <li> Nguyễn Thành Đạt</li>
+                            <li> 26/04/2007</li>
+                            <li> <a href="https://www.facebook.com/profile.php?id=100042271612629" target="_blank"><img src="https://th.bing.com/th/id/OIP.cOz92GK9w_2_VxUIWBL0ngHaHa?rs=1&pid=ImgDetMain" class="logo-facebook"></a></li>
+                        </ul>
+                    </div>
+
+
+
+            </div>
+
+
+
+
+        
+    </body>
+</html>
